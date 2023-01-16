@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <script>
+                function digitalClock() {
+                 var date = new Date();
+                 var hours = date.getHours();
+                 var minutes = date.getMinutes();
+                 var seconds = date.getSeconds();
+                    //* добавление ведущих нулей */
+                   if (hours < 10) hours = "0" + hours;
+                   if (minutes < 10) minutes = "0" + minutes;
+                   if (seconds < 10) seconds = "0" + seconds;
+                     document.getElementById("id_clock").innerHTML = hours + ":" + minutes + ":" + seconds;
+                     setTimeout("digitalClock()", 1000);
+                }
+               </script>
+               <div id="id_clock"></div>
+                <script>digitalClock();</script>
+            <p1><b>PlantFarm</b></p1>
+            <p2>(Сити-ферма)</p2>
+            <img src="Img\Снимок экрана 2022-11-17 133555.png" alt="pic" class="user">
+        </div>
+    </header>
+    <main>
+        
+            <div class="rectangle">
+                <p class="indicators">Показатели в норме!</p>
+                <img src="Img\галочка.png" alt="" class="mark">
+            </div>
+            
+        <div class="allindicators">
+            <div class="rectangle1">
+                <img src="Img\Влажность.jpg" alt="" class="humidity">
+                <p3>Влажность:</p3>
+                <div class="percent">
+                    <p01> dfe</p01>
+                </div>
+
+                
+            </div>
+            <div class="rectangle2">
+                <img src="Img\Вентиляция.png" alt="" class="ventilation">
+                <p3>Вентиляция: </p3>
+                <div class="vent">
+                    <p02>ryr </p02>
+                </div>
+            </div>
+            <div class="rectangle3">
+                <img src="Img\уровень жидкости.jpg" alt="" class="liquid">
+                <p3>Уровень жидкости: </p3>
+                <div class="liq">
+                    <p03>  sg </p03>
+                </div>
+            </div>
+            <div class="rectangle4">
+                <img src="Img\температура.webp" alt="" class="temperature">
+                <p3>Температура: </p3>
+                <div class="temp">
+                    <p04>dh</p04>
+                </div>
+            </div>
+        </div>
+    </div>  
+        <div class="lighting">
+            <div class="rectangle5">
+            </div>
+            <img src="Img\освещение.jpg" alt="" class="light">
+            <p4><b>Управление освещением</b></p4>
+            <div class="rectangle6">
+                
+                <p class="level1">Уровень 1<br>
+                    <label class="checkbox-green">
+                        <input type="checkbox">
+                        <span class="checkbox-green-switch" data-label-on="On" data-label-off="Off"></span>
+                    </label>
+                </p>
+                <p class="level2">Уровень 2<br>
+                    <label class="checkbox-green">
+                        <input type="checkbox">
+                        <span class="checkbox-green-switch" data-label-on="On" data-label-off="Off"></span>
+                    </label>
+                </p>
+                <p class="level3">Уровень 3<br>
+                    <label class="checkbox-green">
+                        <input type="checkbox">
+                        <span class="checkbox-green-switch" data-label-on="On" data-label-off="Off"></span>
+                    </label>
+                </p>
+            </div>
+        </div>
+        <div class="rectangle7">
+        </div>
+        <div class="wat">
+            <div class="watering">
+                <img src="Img\полив.png" alt="" class="water">
+                <p5><b>Управление поливом</b></p5>
+                <input type="range" min="0" max="5" class="slider">
+            </div>
+        </div>
+        <div class="rectangle8">
+        </div>
+        <div class="video">
+            <img src="Img\видеонаблюдение.png" alt="" class="recording">
+            <p6><b>Система видеонаблюдения</b></p6>
+            <div class="rectangle9">
+                <p7><b>Нет сигнала</b></p7>
+            </div>
+        </div>
+        <div class="zam">
+            <img src="Img\заметки.png" alt="" class="notes">
+            <p8><b>Заметки</b></p8>
+            <textarea placeholder="Начните ввод..." class="input"></textarea>
+        </div>
+            <img src="Img\активность.jpg" alt="" class="activity">
+            <p9><b>Последняя активность</b></p9>
+            <div class="rectangle10">
+                <p10>Последняя активность: 9 мин. назад</p10>
+            </div>
+        </div>
+        <div class="shelf">
+            <img src="Img\стеллаж.webp" alt="" class="rack">
+            <div class="rectangle11">
+                <p10>Уровень 3</p10>
+            </div>
+            <div class="rectangle12">
+                <p11>Уровень 2</p11>
+            </div>
+            <div class="rectangle13">
+                <p12>Уровень 1</p12>
+            </div>
+        </div>
+    </main>
+    
+</body>
+</html>
